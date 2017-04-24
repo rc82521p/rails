@@ -1,0 +1,23 @@
+
+player
+  include ActiveModel::Model
+ 
+  attr_accessor :player id, :name, :position, :team
+  validates :player id, :name, :position, :team presence: true
+ 
+  def deliver
+    if valid?
+      # deliver player
+    end
+  end
+end
+
+
+
+
+
+
+
+
+
+
