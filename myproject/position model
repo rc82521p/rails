@@ -1,0 +1,13 @@
+
+position
+  include ActiveModel::Model
+ 
+  attr_accessor :position id, :players,
+  validates :positon id, :players, presence: true
+ 
+  def deliver
+    if valid?
+      # deliver position 
+    end
+  end
+end

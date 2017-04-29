@@ -1,0 +1,3 @@
+Player	-	Name (string)	-	Player Pic (image)
+	- 	Year Drafted (integer)
+	- 	Position (string)Team	-	Name (string)	-	Players (int)	-	Logo (image)	-	Positions (string)Models	Player		Name, Team, Pic, Position	Team		Title, Year, Logo Pic, Positions		Players belong to Teams	Teams have many Players Controllers	PlayerController		Index		Show 		Create (behind authentication)		Update (behind authentication)		Destroy (behind authentication)	TeamsController		Index		Show 		Create (behind authentication)		Update (behind authentication)		Destroy (behind authentication)Views	Players 		Index.html.erb >> Root		Show.html.erb		Create.html.erb		Update.html.erb

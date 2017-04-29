@@ -1,0 +1,30 @@
+1. PaperCLip
+
+class User < ActiveRecord::Base
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+end
+
+
+
+2. CanCanCan
+
+class Ability
+  include CanCan::Ability
+
+  def initialize(user)
+    user ||= User.new # guest user (not logged in)
+    if user.admin?
+      can :manage, :all
+    else
+      can :read, :all
+    end
+  end
+end
+
+
+3. Devise
+
+class User < ActiveRecord::Base
+  devise :database_authenticatable, :registerable, :confirmable, :recoverable, stretches: 20
+end

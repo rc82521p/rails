@@ -1,0 +1,39 @@
+Last login: Sat Apr  8 15:05:35 on ttys000
+Rickys-Air:~ Macbook$ 
+Rickys-Air:~ Macbook$ $ gem install rails
+-bash: $: command not found
+Rickys-Air:~ Macbook$ 
+Rickys-Air:~ Macbook$ $ sqlite3 --version
+-bash: $: command not found
+Rickys-Air:~ Macbook$ $ rails --version
+-bash: $: command not found
+Rickys-Air:~ Macbook$ 
+Rickys-Air:~ Macbook$ create  app/controllers/welcome_controller.rb
+-bash: create: command not found
+Rickys-Air:~ Macbook$  route  get 'welcome/index'
+route: bad address: welcome/index
+Rickys-Air:~ Macbook$ invoke  erb
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ create    app/views/welcome
+-bash: create: command not found
+Rickys-Air:~ Macbook$ create    app/views/welcome/index.html.erb
+-bash: create: command not found
+Rickys-Air:~ Macbook$ invoke  test_unit
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ create    test/controllers/welcome_controller_test.rb
+-bash: create: command not found
+Rickys-Air:~ Macbook$ invoke  helper
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ create    app/helpers/welcome_helper.rb
+-bash: create: command not found
+Rickys-Air:~ Macbook$ invoke    test_unit
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ invoke  assets
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ invoke    coffee
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ create      app/assets/javascripts/welcome.coffee
+-bash: create: command not found
+Rickys-Air:~ Macbook$ invoke    scss
+-bash: invoke: command not found
+Rickys-Air:~ Macbook$ create      app/assets/stylesheets/welcome.scss
